@@ -3,9 +3,16 @@ import { createStackNavigator } from 'react-navigation-stack';
 
 import Main from './pages/Main';
 import Profile from './pages/Profile';
+import Login from './pages/Login';
 
 const Routes = createAppContainer(
     createStackNavigator({
+        Login: {
+            screen: Login,
+            navigationOptions: {
+                title: 'Login'
+            }
+        },
         Main: {
             screen: Main,
             navigationOptions: {
